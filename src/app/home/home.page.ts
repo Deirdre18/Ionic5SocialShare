@@ -15,14 +15,12 @@ export class HomePage {
 
   constructor(
     // DON´T FORGET ADDING IT TO THE CONSTRUCTOR.
-    private socialSharing: SocialSharing,
-  ) {}
+    private socialSharing: SocialSharing) {}
   
   ShareGeneric(parameter){
     const url = this.link
     const text = parameter+'\n'
-    const imgurl = this.imgurl
-    this.socialSharing.share(text, null, url, imgurl)
+    this.socialSharing.share(text, null, url)
   }
   
   ShareFacebook(){
@@ -38,7 +36,7 @@ export class HomePage {
   }
 
   SendInstagram(){
-    this.socialSharing.shareViaInstagram(this.imgurl, this.text /* url */)
+    this.socialSharing.shareViaInstagram(this.text, this.imgurl)
   }
- 
+   
 }
