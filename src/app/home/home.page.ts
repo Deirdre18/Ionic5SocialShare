@@ -1,5 +1,3 @@
-//Code taken from https://medium.com/@alejandrolp1986/social-sharing-in-your-ionic-5-app-6aea75448f0d
-
 import { Component } from '@angular/core';
 // IMPORT SOCIAL SHARING.
 import { SocialSharing } from '@ionic-native/social-sharing/ngx';
@@ -11,8 +9,8 @@ import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 })
 export class HomePage {
 
-  text: string='Flamenco'
-  imgurl:string= 'https://cdn.pixabay.com/photo/2019/12/26/05/10/pink-4719682_960_720.jpg'
+  text: string='Test'
+  imgurl:string= 'https://i.ytimg.com/vi/d9EbXv4sPDE/maxresdefault.jpg'
   link: string='https://link.medium.com/JA4amAHFJ5'
 
   constructor(

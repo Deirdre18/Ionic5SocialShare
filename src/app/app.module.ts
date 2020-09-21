@@ -1,5 +1,3 @@
-//Code taken from https://medium.com/@alejandrolp1986/social-sharing-in-your-ionic-5-app-6aea75448f0d
-
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
