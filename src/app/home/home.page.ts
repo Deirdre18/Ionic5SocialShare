@@ -38,7 +38,7 @@ export class HomePage {
   }
 
   SendInstagram(){
-    this.socialSharing.shareViaInstagram(this.imgurl, null/* url */)
+    this.socialSharing.shareViaInstagram(this.imgurl, this.text /* url */)
   }
-  
+ 
 }
