@@ -13,7 +13,7 @@
     </ion-toolbar>
   </ion-header>
   <ion-grid>
-    <ion-row class="ion-align-items-center">
+    <ion-row class="ion-justify-content-center">
       <ion-col size="8" style="height: 200px;">
         <ion-img style="height: 200px;" [src]="imgurl"></ion-img>
       </ion-col>
@@ -25,29 +25,37 @@
       </ion-col>        
     </ion-row>
     
-    <div class="login"><em>Login to Share</em></div>
- 
-    <ion-row class="ion-align-items-center">
+    <br>
+  
+  <div class="login"><em>Login to Share</em></div>
+      
+  <br>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="2">
+          <ion-icon name="share-social-outline" color="warning" style="padding-top:13px" ></ion-icon>
+      </ion-col>
+
+      <ion-col size="2">
+          <ion-button size="small" color="warning" (click)="SendEmail()"><ion-icon name="mail-outline"></ion-icon></ion-button>
+      </ion-col>
     
       <ion-col size="2">
-      <ion-icon name="share-social-outline" color="warning"></ion-icon>
-      </ion-col>      
-      <ion-col size="2">
-       <ion-button color="warning" (click)="SendEmail()"><ion-icon name="mail-outline"></ion-icon></ion-button>
+        <ion-button size="small" color="primary" (click)="ShareFacebook()"><ion-icon name="logo-facebook"></ion-icon></ion-button>
       </ion-col>
-          <ion-col size="2">
-        <ion-button color="primary" (click)="ShareFacebook()"><ion-icon name="logo-facebook"></ion-icon></ion-button>
-      </ion-col>      
-          <ion-col size="2">
-        <ion-button  color="secondary" (click)="SendTwitter()"><ion-icon name="logo-twitter"></ion-icon></ion-button>
-      </ion-col>   
-         <ion-col size="2">
-        <ion-button color="tertiary" (click)="SendInstagram()"><ion-icon name="logo-instagram"></ion-icon></ion-button>
-      </ion-col>    
-          <ion-col size="2">
-        <ion-button color="success" (click)="ShareWhatsapp()"><ion-icon name="logo-whatsapp"></ion-icon></ion-button>
+    
+      <ion-col size="2">
+        <ion-button size="small" color="secondary" (click)="SendTwitter()"><ion-icon name="logo-twitter"></ion-icon></ion-button>
+      </ion-col>
+    
+      <ion-col size="2">
+        <ion-button size="small" color="tertiary" (click)="SendInstagram()"><ion-icon name="logo-instagram"></ion-icon></ion-button>
+      </ion-col>
+
+      <ion-col size="2">
+        <ion-button size="small" color="success" (click)="ShareWhatsapp()"><ion-icon name="logo-whatsapp"></ion-icon></ion-button>
       </ion-col>  
-     
+      
     </ion-row>
-  </ion-grid>  
- </ion-content>
+    </ion-grid>   
+
+</ion-content>  

@@ -38,9 +38,8 @@ export class HomePage {
   SendInstagram(){
     this.socialSharing.shareViaInstagram(this.text, this.imgurl)
   }
-  
-   ShareWhatsapp(){
+  ShareWhatsapp(){
     this.socialSharing.shareViaWhatsApp(this.link)
   }    
-   
+
 }
